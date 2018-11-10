@@ -8,6 +8,7 @@ install: true
 
 before_script: 
   - chmod 0777 ./node_modules/.bin/mocha
+  - chmod 0777 ./node_modules/.bin/nyc
 
 script:
   - "npm start &"
