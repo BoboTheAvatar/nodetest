@@ -7,6 +7,7 @@ node_js:
 install:
   - npm install -g codecov
   - npm install -g coveralls
+  - npm install -g istanbul
 
 before_script: 
   - chmod 0777 ./node_modules/.bin/mocha
@@ -17,5 +18,4 @@ script:
   - npm test
   
 after_success:
-    - "npm run coverage"
     - codecov
