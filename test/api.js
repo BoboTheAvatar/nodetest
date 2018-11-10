@@ -1,5 +1,6 @@
 var expect  = require("chai").expect;
 var request = require("request");
+var url = require("url");
 
 describe("API End-point Testing", function() {
 
@@ -7,6 +8,8 @@ describe("API End-point Testing", function() {
 
   describe("Get all parcels of 1 user", function() {
 
+    console.log(url);
+    
     var url = "http://localhost:8080/API/users/bobobuya/parcels";
 
     var result={ 
