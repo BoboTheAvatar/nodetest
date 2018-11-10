@@ -1,19 +1,15 @@
 const express= require('express');
 var expect  = require("chai").expect;
 var request = require("request");
-var url = require('url');
+
 
 describe("API End-point Testing", function() {
 
   //Testing No 1
 
   describe("Get all parcels of 1 user", function() {
-
+    
     var url = "http://localhost:8080/API/users/bobobuya/parcels";
-    //var urlrequest=url.host(request,true);
-
-    //var urlhost=urlrequest.host();
-    //var urlpath=urlhost+"/API/users/bobobuya/parcels";
 
     console.log(url);
 
