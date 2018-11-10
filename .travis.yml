@@ -1,14 +1,5 @@
 language: node_js
 
-env:
-  global:
-    - URL=http://localhost:8080
-    - PORT=8080
-    - NODE_ENV=development
-    - JWT_SECRET=go@secret
-    - MAILGUN_USER=
-    - MAILGUN_PASSWORD=
-
 node_js: 
   - 9
   - 8
