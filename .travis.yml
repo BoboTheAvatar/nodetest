@@ -4,7 +4,8 @@ node_js:
   - 9
   - node
 
-install: true
+install:
+  - npm install -g codecov
 
 before_script: 
   - chmod 0777 ./node_modules/.bin/mocha
@@ -15,4 +16,4 @@ script:
   - npm test
   
 after_success:
-    - bash <(curl -s https://codecov.io/bash)
+    - codecov
