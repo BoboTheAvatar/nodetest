@@ -4,10 +4,8 @@
   "description": "Ordering Parcel Delivery",
   "main": "index.js",
   "scripts": {
-    "test": "nyc cover ./node_modules/.bin/mocha",
-    "start": "node index.js",
-	"coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls",
-	"sest": "jest ./test/api.js"
+    "test": "./node_modules/.bin/mocha",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
