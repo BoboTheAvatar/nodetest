@@ -4,8 +4,9 @@
   "description": "Ordering Parcel Delivery",
   "main": "index.js",
   "scripts": {
-    "test": "nyc ./node_modules/.bin/mocha",
-    "start": "node index.js"
+    "test": "nyc --reporter=html --reporter=text ./node_modules/.bin/mocha",
+    "start": "node index.js",
+	"coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
