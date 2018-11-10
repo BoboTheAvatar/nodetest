@@ -1,16 +1,16 @@
 var expect  = require("chai").expect;
 var request = require("request");
-var url = require("url");
+//var url = require("url");
 
 describe("API End-point Testing", function() {
 
   //Testing No 1
 
   describe("Get all parcels of 1 user", function() {
-
-    console.log(url);
     
     var url = "http://localhost:8080/API/users/bobobuya/parcels";
+    
+    console.log(url);
 
     var result={ 
         "bobobuya":{
