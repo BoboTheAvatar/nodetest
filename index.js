@@ -7,7 +7,7 @@ const app=express();
 
 //app.use(express.static('./public'));
 
-app.use('/api', require('./API/index'));
+app.use('/API', require('./API/index'));
 //app.use('/api/v1', rootin());
 
 

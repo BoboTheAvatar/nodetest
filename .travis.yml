@@ -9,4 +9,6 @@ install: true
 
 
 script:
+  - npm start 
   - npm test
+  - npm run coveralls
