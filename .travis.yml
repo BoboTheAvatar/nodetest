@@ -12,8 +12,6 @@ before_script:
 script:
   - "npm start &"
   - npm test
-
-cov travis.ymlYAML
-
+  
 after_success:
     - bash <(curl -s https://codecov.io/bash)
